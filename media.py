@@ -6,7 +6,7 @@ class Movie(object):
 
 	def __init__(self, movie_title, movie_year, movie_storyline,
 	movie_poster_url, movie_trailer_url):
-	""" Constructor method, sets the instance variables """
+		""" Constructor method, sets the instance variables """
 		self.title = movie_title
 		self.year = movie_year
 		self.storyline = movie_storyline
