@@ -1,6 +1,8 @@
 import media
 import fresh_tomatoes
 
+
+# Intitalize several Movie classes with Disney.Pixar movies
 toy_story = media.Movie("Toy Story", 1995, "Toy Story's storyline", r'https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg', r'https://www.youtube.com/watch?v=Ny_hRfvsmU8')
 a_bugs_life = media.Movie("A Bug's Life", 1998, "A Bug's Life's storyline", r'https://upload.wikimedia.org/wikipedia/en/c/cc/A_Bug%27s_Life.jpg', r'https://www.youtube.com/watch?v=mE35XQFxbeo')
 toy_story_2 = media.Movie("Toy Story 2", 1999, "Toy Story 2's storyline", r'https://upload.wikimedia.org/wikipedia/en/c/c0/Toy_Story_2.jpg', r'https://www.youtube.com/watch?v=Lu0sotERXhI')
@@ -22,9 +24,11 @@ cars_3 = media.Movie("Cars 3", 2017, "Cars 3's storyline", r'https://upload.wiki
 coco = media.Movie("Coco", 2017, "Coco's storyline", r'https://upload.wikimedia.org/wikipedia/en/9/98/Coco_%282017_film%29_poster.jpg', r'https://www.youtube.com/watch?v=Rvr68u6k5sI')
 incredibles_2 = media.Movie("Incredibles 2", 2018, "Incredibles 2's storyline", r'https://upload.wikimedia.org/wikipedia/en/2/27/The_Incredibles_2.jpg', r'https://www.youtube.com/watch?v=i5qOzqD9Rms')
 
+# Create a list of Movie classes containing favourite Disney.Pixar movies
 movies = [toy_story, a_bugs_life, toy_story_2, monsters_inc, finding_nemo,
 	the_incredibles, cars, ratatouille, wall_e, up, toy_story_3, cars_2,
 	brave, monsters_university, inside_out, the_good_dinosaur,
 	finding_dory, cars_3, coco, incredibles_2]
 
+# Use fresh_tomatoes in combination with the prepared list to generate the HTML page
 fresh_tomatoes.open_movies_page(movies)
